@@ -1,4 +1,4 @@
-# MiuiCamera
+# Miui Camera Configuration for Xiaomi Devices
 
 ### Supported devices
 * agate

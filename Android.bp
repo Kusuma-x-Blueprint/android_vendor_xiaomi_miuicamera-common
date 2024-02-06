@@ -9,7 +9,7 @@ soong_namespace {
 
 android_app_import {
     name: "MiuiCamera",
-    apk: "prebuilt/MiuiCamera.apk",
+    apk: "proprietary/system_ext/priv-app/MiuiCamera/MiuiCamera.apk",
     overrides: [
         "Aperture",
         "Camera2",
@@ -26,21 +26,15 @@ android_app_import {
 
 android_app_import {
     name: "MiuiExtraPhoto",
-    apk: "prebuilt/MiuiExtraPhoto.apk",
+    apk: "proprietary/system_ext/app/MiuiExtraPhoto/MiuiExtraPhoto.apk",
     certificate: "media",
     system_ext_specific: true,
     uses_libs: ["org.apache.http.legacy"],
 }
 
-cc_library {
-    name: "libgui_shim_miuicamera",
-    srcs: ["shims/libgui_shim_miuicamera.c"],
-    system_ext_specific: true,
-}
-
 prebuilt_etc {
     name: "privapp-permissions-miuicamera.xml",
     system_ext_specific: true,
-    src: "permissions/privapp-permissions-miuicamera.xml",
+    src: "proprietary/system_ext/etc/permissions/privapp-permissions-miuicamera.xml",
     sub_dir: "permissions",
 }

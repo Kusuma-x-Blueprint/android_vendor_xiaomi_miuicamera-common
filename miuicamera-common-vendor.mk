@@ -30,4 +30,4 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/xiaomi/miuicamera
+    vendor/xiaomi/miuicamera-common
