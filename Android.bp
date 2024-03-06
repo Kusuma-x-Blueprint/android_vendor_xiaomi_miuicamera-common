@@ -21,6 +21,8 @@ android_app_import {
     system_ext_specific: true,
     required: [
         "privapp-permissions-miuicamera.xml",
+        "FrameworksOverlayMiuiCamera",
+        "LensLauncher",
     ],
 }
 
