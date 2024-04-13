@@ -11,6 +11,7 @@ android_app_import {
     name: "MiuiCamera",
     apk: "proprietary/system_ext/priv-app/MiuiCamera/MiuiCamera.apk",
     overrides: [
+        "Aperture",
         "Camera2",
         "GoogleCamera",
         "GoogleCameraGo",
